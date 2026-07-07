@@ -53,3 +53,29 @@ let point3 = point1+point2
 let age = 10
 let speed = 10
 // 10이라는 같은 리터럴값을 가지지만, 서로다른 의미를 갖는 두 변수 표현
+
+// 출력함수
+// 함수: 자주 사용 되는 코드들을 정의하여 재사용 / 호출, 내가만든함수 vs 남이만든함수
+// console.log(출력할 자료) : 브라우저 개발자도구[F12] console탭
+console.log("안녕하세요")
+
+// 2.alert(출력할자료) : 브라우저 알림창에 메시지 출력
+alert("안녕하세요?")
+
+// 3.document.querySelector("선택자")
+// document(html문서), query(질의), Selector(선택자),
+// inner(마크업사이에)="대입할값" : 마크업과마크업 사이를 inner라고한다
+document.querySelector("h3").innerHTML = "JS에서 대입한값"
+
+
+// 입력함수
+// 1. confirm( 출력할메시지 ): 브라우저 알리창에 [확인=true]/[취소=false] 알림창
+let 결과1 = confirm()       // 입력받은 true or false 변수에 저장
+console.log(결과1)          // true or false 반환
+
+// 2. prompt( 출력할메시지 )
+let 결과2 = prompt("코드입력")        // 브라우저에 입력가능한 알림창, 입력한 자료를 반환
+console.log(결과2)
+
+// 매 쉬는 시간마다 커밋/푸시
+

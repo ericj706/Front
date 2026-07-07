@@ -37,7 +37,6 @@
     <ul>        <!-- ul: 순서없는 목록 -->
         <li> 항목1 </li> 
         <li> 항목2 </li> 
-
     </ul>
 
     <a href="https://www.naver.com"> 네이버 링크 </a>  <!-- a: 하이퍼링크 -->
@@ -45,6 +44,31 @@
     <a href="exam1.html"> 'exam1' HTML로 이동 </a> 
     <br />
     <a href="tel:010-9472-5344"> 모바일에서 전화앱 </a> 
+    <br />
+
+    <img src = "./urban-20230228144115810458.jpg" />
+    <img src = "../urban-20230228144115810458.jpg"/>        <!-- img: 이미지 마크업 -->
+    <!-- 상대결로란? 현재 코드를 작성하는 위치 기준으로 불러올 파일의 경로 지정 -->
+    <!-- ./ : 현재폴더이며 생략가능
+        ../ : 상위폴더 1번 이동
+        ../../ : 상위폴더 2번 이동
+    -->
+    
+    <img src = "C:\Front_pjt\day02\urban-20230228144115810458.jpg" />
+    <!-- 절대경로란? 불러올 파일의 전체 경로 지정 -->
+    <img src = "http://127.0.0.1:5500/day02/urban-20230228144115810458.jpg" />
+    <!-- 서버경로란? 불러올 파일의 서버 경로 지정 -->
+
+    
+    <audio src = "음원파일(pixabay)" controls> </audio>    <!-- audio 오디오마크업-->
+    <video src = "비디오파일(pixabay)" controls> </video>
+    <!-- autoplay 브라우저 정책상 불가능, 단 muted(음소거)하면 가능 -->
+
+
+    <!-- 유튜브에서 영상 파오기 -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gYtmKUpHfjU?si=GApnfcx3VS67iRDu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- 구글맵 가져오기 -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357b67b86fa90ca9%3A0x50ab76efd5310e0d!2z7ISx6rKw64yA7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1783414982070!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
 </body>     <!-- HTML 본문 끝 -->
 </html>     <!-- HTML 끝 -->

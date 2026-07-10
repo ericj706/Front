@@ -56,3 +56,23 @@ for(let 반복수 =1; 반복수 <=3; 반복수++){
     console.log(입력)
 }
 
+// 반복문 제어키워드
+// 1. continue;
+for(let i=1; i<=5; i++){
+    // 만약 반복수가 3이면, continue->증감식
+    if(i == 3) continue //반복문의 *증감식*으로 흐름이 이동
+    console.log( i )    //즉, i==3이면 consoloe.log 실행 안됨
+}
+
+// 2. break; 반복문의 탈출, 강제종료
+for( let i=1; i <= 5; i++){
+    if(i==5){break}
+    console.log(i)
+}   // break 만나면 break->에서 for문의 끝 중괄호} 밖으로 이동
+
+// 3. 무한루프(무한반복) *특정조건의 break 권장*
+// for( ; ; ){console.log('무한출력')} => 메모리 소모 큼
+for( ; ; ){
+    let 입력 = prompt()
+    if(입력 == 'EXIT'){break}       // 입력한 값이 'EXIT'이면 무한루프 종료
+}

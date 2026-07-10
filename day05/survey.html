@@ -5,6 +5,50 @@
     <title>20대 선호 카페 설문조사</title>
 </head>
 <body>
+
+    <h1> 카페 설문조사 </h1>
+    <table border="1">
+        <h3> [설문자 정보] </h3>
+         <hr />
+        <tbody> 
+            이름 :  <input type="name" />     <br/>     
+            성별 :  <input type="radio" name="gender" /> 남 
+            <input type="radio" name="gender" /> 여 <br/>
+            나이    :  <input type="name" />  <br/> 
+        </tbody>
+    </table>
+    <br />
+    <h3> [선호 카페 조사] </h3>
+    <hr />
+    <tbody>
+
+        <form> <!-- 여러개 입력 마크업들을 그룹 해주는 역할, 추후에 백엔드 통신 -->
+        1. 선호하는 카페 종류 <br />
+            <input type="radio" name="카페종류" /> 프렌차이즈
+            <input type="radio" name="카페종류" /> 개인
+            <input type="radio" name="카페종류" /> 스터디카페    <br/> <br />
+
+        2. 방문 빈도 <br/>
+            <input type="radio" name="방문횟수" /> 주 1~2회
+            <input type="radio" name="방문횟수" /> 주 3~4회
+            <input type="radio" name="방문횟수" /> 주 5~6회
+            <input type="radio" name="방문횟수" /> 매일  <br/> <br />
+
+        3. 방문시간대 (중복 선택 가능) <br/> 
+            <input type="checkbox" name="방문시간" /> 오전
+            <input type="checkbox" name="방문시간" /> 점심 
+            <input type="checkbox" name="방문시간" /> 늦은 오후 
+            <input type="checkbox" name="방문시간" /> 저녁 이후     <br/> <br />
+        4. 메뉴 선호도 (중복 선택 가능) <br/>
+            <input type="checkbox" name="선호메뉴" /> 아메리카노
+            <input type="checkbox" name="선호메뉴" /> 라떼
+            <input type="checkbox" name="선호메뉴" /> 스무디, 쉐이크 
+            <input type="checkbox" name="선호메뉴" /> 디저트, 베이커     <br/> <br />
+        </form>
+    </tbody>    
+
+
+
     <tr>
         <p> 5. 카페 결정 이유(선호도가 높을수록 높은 점수)<br /></p>
     </tr>
@@ -63,6 +107,9 @@
         <p> 6. 방문 목적 <br /></p>
         <textarea cols="35" rows="10"></textarea>
     </tr>
+
+    
+
 </body>
 </html>
 

@@ -1,6 +1,71 @@
-h5{color: blueviolet;}
+h5{color: rgb(206, 3, 3);}
 /* CSS 주석 */
 /* 
     (html)마크업에 스타일 적용 문법 
     선택자 { 속성명: 속성값; 속성명 : 속성값; }
+    선택자 종류
+        1. * : 와일드카드(전체) (css가 이미 정의된것은 적용x)
+        2. h4 : 특정 마크업명
+        3. .className : 특정 클래스명 지정      (복수식별)
+        4. #id : 특정 id명을 지정              (단일식별)
+
+    선택자 우선순위 : 동일한 마크업에 동일한 속성이 중복으로 들어올때의 우선순위 
+        와일드카드(꼴등, 레이업용, 뼈대잡기용) < 특정마크업 < class < id
+        <마크업 style = "CSS문법"> 우선 적용
 */
+
+*{color: rgb(7, 5, 5);}
+h6{color: bisque;}
+.구역1{color: blueviolet;}
+
+#구역2{color: rgb(246, 2, 2);}
+
+#구역2{color: rgb(245, 144, 11);}
+
+/* 자식선택자: 상위선택자 > 하위선택자 */
+div > h3{color: green;}
+/* 자손선택자 : 상위선택자 하위선택자 */
+div li{background-color:aqua ;}
+
+/* 복수선택자 : 선택자 2개 이상 작성 */
+h3, h4 {color:grey;}
+
+/* 다양한 선택지를 제공함으로써 중복 방지 */
+html > body > div > ol {background-color: blanchedalmond;}
+/* vs */
+#이름1{color: black;}
+
+/* 누구를 { 무엇을 : 어떻게 } */
+/* 속성값 뒤로 ;(세미클론)으로 닫는다, 구분한다 */
+.title{
+    font-family: 'MissedGyuwon'; /*글자체*/
+    font-size: 30px;    /* 글자 사이즈*/
+    font-style: italic; /* 글자 기울기 */
+    font-weight: bold;   /* 글자 진하기 */
+}
+
+/* 웹폰트: 눈누 / 구글폰트에서 웹폰트 코드 복사해서 붙여넣기 */
+@font-face {
+    font-family: 'MissedGyuwon';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2510-1@1.0/Griun_Gyuwon-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+.본문구역{
+    font-family: 'MissedGyuwon'; 
+    font-size: 20px;
+    color: brown;
+    word-spacing: 7px;      /* 단어간격(어간) */
+    letter-spacing: 8px;    /* 글자간격(자간) */
+    line-height: 170%;      /* 줄간격, 백분위 */
+}
+.작성자{
+    text-align: center;     /* 텍스트 가로 정렬: left, center, right */
+    text-decoration: underline overline line-through; /* underline: 밑줄, overline: 윗줄, line-through: 취소선 */
+    text-shadow: 10px 10px 3px blue;      /* x축(+오른쪽, -왼쪽)px y축(+아래, -위)px 흐림정도px 색상 */
+    color : green;           /* 방법1: 색상명 */
+    color : rgb(7, 5, 5);    /* 방법2: rgb(r, g, b) */
+    color : rgba(0, 255, 0, 0.8)    /* 방법3: rgb+ a알파: 투명도 */
+    color #000;              /* 방법4: 헥스코드 */
+}
+

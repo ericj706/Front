@@ -72,7 +72,6 @@ for(let i=0;i<numbers.length-1;i++){
     if(배열.indexOf(numbers[i]) == -1){
         배열.push(numbers[i])
     }
-    
 }
 console.log(배열)
 
@@ -81,17 +80,20 @@ console.log(배열)
 주어진 숫자 배열을 '버블 정렬' 알고리즘을 이용하여 오름차순으로 정렬하고, 최종 정렬된 배열을 출력하시오.
 let numbers = [5, 3, 4, 1, 2];
 힌트: 중첩 for 반복문을 사용하며, 이웃한 두 요소를 비교하 위치를 바꿉니다.
-*/
+
 let numbers = [5, 3, 4, 1, 2];
 
-for(let i=0;i<numbers.length-1;i++){
-    if(){
-        
+for (let i = 0; i < numbers.length - 1; i++) {
+    for (let j = 0; j < numbers.length - 1 -i; j++) {
+        if (numbers[j] > numbers[j + 1]) {
+            let tmp = numbers[j];       // 스왑(두 변수간 값 교체)
+            numbers[j] = numbers[j + 1];
+            numbers[j + 1] = tmp;
+        }
     }
 }
-
 console.log(numbers)
-
+*/
 
 
 /*문제 7: 재고 관리 시스템
@@ -103,11 +105,15 @@ let products = ['볼펜', '노트', '지우개'];
 let stock = [10, 5, 20];
 let 구매 = prompt('구매할 상품명')
 let 수량 = Number(prompt('상품 수량'))
-for(i=0; i<products.length-1;i++){
-    구매 = products[i]
-    if(stock[i]>0){}
-}
 
+for(i=0; i<products.length-1;i++){
+    if(products[i] == [구매]){
+         if(stock[i]>=수량){console.log('구매완료!');stock[i]=stock[i]-수량}
+         else{console.log('재고가 부족합니다')}
+    }
+    
+}
+*/
 
 /*문제 8: 영화 평점 시각화하기
 주어진 영화 이름과 평점 배열을 이용하여, 각 영화의 평점을 별(★)로 시각화하여 HTML에 출력하는 프로그램을 작성하시오.
@@ -126,6 +132,24 @@ for 반복문을 사용하여 모든 영화를 순회합니다.
 글래디에이터2   ★★★★★★★☆☆☆
 청설            ★★★★★★☆☆☆☆
 
+
+let movieNames = ['히든페이스', '위키드', '글래디에이터2', '청설'];
+let movieRatings = [8, 4, 7, 6];
+let html = ''
+for(let i=0; i<=movieNames.length-1;i++){
+    html += movieNames[i];
+    html += '<br />'
+    // 평점(별) 출력하기
+    for(let j=1; j<=10; j++){
+        if(j <= movieRatings[i]){
+            html += '★'
+        }else{
+            html += '☆'
+        }
+    }
+    html += '<br />'
+}
+document.querySelector('p').innerHTML = html
 */
 
 /*문제 9: 좌석 예약 상태 표시하기
@@ -145,7 +169,11 @@ for 반복문을 사용하여 6개의 좌석을 모두 출력합니다.
 예약석 빈좌석
 예약석 빈좌석
 
-*/
+
+let seatStatus = ['빈좌석', '예약석', '예약석', '빈좌석', '예약석', '빈좌석'];
+for(i=0;i<seatStatus.length;i++){
+    console.log(seatStatus[i])
+}
 
 /*문제 10: 주차 요금 정산하기
 차량별 주차 시간 데이터가 주어졌을 때, 아래의 요금 규정에 따라 각 차량이 지불해야 할 최종 주차 요금을 계산하여 HTML에 출력하는 프로그램을 작성하시오.

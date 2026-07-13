@@ -43,11 +43,12 @@ let userNames = ['김하준', '이서아', '박솔민', '최도윤'];
 let userNames = ['김하준', '이서아', '박솔민', '최도윤'];
 
 for(let i=0;i<userNames.length-1;i++){
-    if(userNames[i].indexOf('솔')){console.log(userNames[i])}
-    else{}
+    if(userNames[i].indexOf('솔') != -1){
+        console.log(userNames[i]); break
+    }
 }
-console.log(userNames.indexOf('박솔민'))
 */
+
 
 /*문제 4: 2차원 배열의 모든 요소 출력하기
 다음과 같은 2차원 배열(좌석표)이 있습니다. 중첩 for 반복문을 사용하여 모든 좌석의 값을 순서대로 출력하시오.
@@ -82,21 +83,31 @@ let numbers = [5, 3, 4, 1, 2];
 힌트: 중첩 for 반복문을 사용하며, 이웃한 두 요소를 비교하 위치를 바꿉니다.
 */
 let numbers = [5, 3, 4, 1, 2];
-let stair = [ ]
-let max =numbers[0];
-for(let j=0;j<5;j++){
-    for(let i=0;i<numbers.length-1;i++){
-        if(max > numbers[i]){max=numbers[i];stair.push(max);numbers.splice(numbers[i-1],1)}
-        else{}
+
+for(let i=0;i<numbers.length-1;i++){
+    if(){
+        
     }
-}   
-    console.log(stair)
+}
+
+console.log(numbers)
+
 
 
 /*문제 7: 재고 관리 시스템
-두 개의 배열 products(상품 목록)와 stock(재고 수량)이 있습니다. 사용자로부터 구매할 상품명과 수량을 입력받아, 재고가 충분하면 "구매 완료!"를 출력하고 재고를 차감하세요. 재고가 부족하면 "재고가 부족합니다."를 출력합니다.
+두 개의 배열 products(상품 목록)와 stock(재고 수량)이 있습니다. 
+사용자로부터 구매할 상품명과 수량을 입력받아, 재고가 충분하면 "구매 완료!"를 출력하고 재고를 차감하세요. 
+재고가 부족하면 "재고가 부족합니다."를 출력합니다.
+
 let products = ['볼펜', '노트', '지우개'];
-let stock = [10, 5, 20];*/
+let stock = [10, 5, 20];
+let 구매 = prompt('구매할 상품명')
+let 수량 = Number(prompt('상품 수량'))
+for(i=0; i<products.length-1;i++){
+    구매 = products[i]
+    if(stock[i]>0){}
+}
+
 
 /*문제 8: 영화 평점 시각화하기
 주어진 영화 이름과 평점 배열을 이용하여, 각 영화의 평점을 별(★)로 시각화하여 HTML에 출력하는 프로그램을 작성하시오.

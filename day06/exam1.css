@@ -25,7 +25,8 @@ h6{color: bisque;}
 /* 자식선택자: 상위선택자 > 하위선택자 */
 div > h3{color: green;}
 /* 자손선택자 : 상위선택자 하위선택자 */
-div li{background-color:aqua ;}
+div li{background-color:aqua ;
+width: fit-content;}
 
 /* 복수선택자 : 선택자 2개 이상 작성 */
 h3, h4 {color:grey;}
@@ -68,4 +69,5 @@ html > body > div > ol {background-color: blanchedalmond;}
     color : rgba(0, 255, 0, 0.8)    /* 방법3: rgb+ a알파: 투명도 */
     color #000;              /* 방법4: 헥스코드 */
 }
+
 

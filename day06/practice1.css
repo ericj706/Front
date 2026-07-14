@@ -1,0 +1,40 @@
+h2{font-family: "궁서";
+}
+@font-face {
+    font-family: 'YeogiOttaeJalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+.구역1{
+    color: blue; 
+    font-family: 'YeogiOttaeJalnan';
+    letter-spacing: 9px;
+
+}
+.구역2{
+    color: red;
+    font-size:  15px;
+    text-decoration: underline overline line-through;
+    text-shadow: 2px 2px 15px red;
+    text-align: center;
+}
+.구역3{
+    color: red;
+    font-size:  27px;
+    font-weight: bold;
+    text-decoration: underline overline line-through;
+    text-shadow: 1px 1px 4px red;
+    text-align: center;
+}
+
+.구역4{color: blue; 
+    font-family: 'YeogiOttaeJalnan';
+}
+.구역5{
+    color: red;
+    font-size:  15px;
+    text-decoration: underline overline line-through;
+    text-shadow: 2px 2px 15px red;
+    text-align: center;
+}

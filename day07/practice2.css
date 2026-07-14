@@ -1,0 +1,23 @@
+
+.번호1, .번호2{
+    font-size: 25px;
+    font-weight: bold;
+    color: orange;
+}
+.제목1, .제목2{
+    font-size: 14px;
+
+    color: black;
+}
+
+.구역1, .구역2{
+    display: inline-block;
+    width: 450px;;
+    color: white;
+    font-size: 14px;
+    background-color: rgb(31, 110, 122);
+}
+.강조{
+    display: inline-block;
+    color: orange;
+}

@@ -1,4 +1,7 @@
 h2{font-family: "궁서";
+    font-size: 45px;
+    font-weight: bold;
+    font-style: italic;
 }
 @font-face {
     font-family: 'YeogiOttaeJalnan';
@@ -30,6 +33,7 @@ h2{font-family: "궁서";
 
 .구역4{color: blue; 
     font-family: 'YeogiOttaeJalnan';
+    letter-spacing: 9px;
 }
 .구역5{
     color: red;

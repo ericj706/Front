@@ -1,0 +1,72 @@
+/*
+    선택자{속성명 : 속성값; 속성명 : 속성값;
+*/
+/* 전체 선택자 */
+*{
+    border : solid 2px red; /* 테두리 :선종류, 선굵기, 선색상 */
+    padding: 10px; /* 안쪽여백 */
+    /* border는 테두리, 여백 먼저 설정해주기 */
+}
+
+.box1{
+    border-top: soild 1px orange;/* 위쪽 테두리 */
+    border-right: dashed 2px blue;  
+    border-left: double 4px black;
+    border-bottom: double 4px green;
+    border-radius: 5px 15px 30px 50px;  /* 둥근모서리 */
+    box-shadow: 3px 3px 1px red;
+    text-align: center;
+    width: 100px;   /* 가로사리즈 */
+    height: 100px;  /* 세로사이즈 */
+}
+.img1{
+    width: 100px;
+}
+.box2{
+    text-align: center; /* 구역내 입력상자 가로정렬 */
+}
+.box2 > input{width: 150px; height: 30px;
+              border-radius: 7px;}
+
+.box3{
+    padding: 10px ;  /* 안쪽여백: 구역테두리 기준으로 안쪽여백 */
+    margin: 10px; /* 바깥여백 */
+}
+.box4{
+    padding: 10px 15px 20px 25px;  /* 위 오른쪽 아래 왼쪽(시계방향)으로 여백 넣기 가능 */
+    margin: 10px 20px;  /* 위아래, 왼쪽오른쪽 묶음으로 조절가능 */
+}
+.box5{
+    margin: 0 auto; /* 바깥여백 auto설정 */
+    width: 50px;    /* ㄴ> 구역이 가운데에 위치, text-align:center와 다름*/
+    text-align: center; /* 구역 내 가로정렬 */
+    color: red;
+    background-color: aqua;
+}
+.s1{
+    display: inline;    /* span, a 등등 마크업 기본값 */
+    width: 50px 100px;  /* 구역 사이즈 조절 적용x */
+    padding: 20px;      /* 왼쪽 오른쪽만 적용 */
+    margin: 20px;       /* 왼쪽 오른쪽만 적용 */
+}
+
+.s2{
+    display: block;     /* inline은 한줄안에 다 포함시키지만 block은 각각이 한줄로 */
+    width: 100px; height: 30px;
+    padding:  30px;
+}
+.s3{
+    display: inline-block;  /* inline + block : input 등등 마크업 기본값 */
+    width: 100px; height: 100px;
+    padding: 20px; margin: 20px;
+}
+.s4{
+    display: none;  /* s4 숨기기 가능, 표시안함 */
+}
+.box6, .box7{
+    width: 500px; padding: 20px;    /* 가로 총길이 = 540 */
+}
+/* box-sizing: content-box: 컨텐츠 */
+.box6{ box-sizing: content-box; }
+/* box-sizing: border-box: 컨텐츠+여백 (추천) */
+.box7{ box-sizing: border-box; }

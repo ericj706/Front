@@ -17,23 +17,23 @@
 }
 .아이디{
     display: inline-block;
-    padding: 9px;
+    padding: 13px;
     margin: 18px;
-    width: 200px;
+    width: 215px;
     border : solid 1px;
-    border-color:black;
+    border-color:grey;
     border-radius: 11px;
-    color: rgba(78, 78, 78, 0.834);
+    color: black;
 }
 .비번{
     display: inline-block;
-    padding: 9px;
+    padding:13px;
     margin-bottom: 22px;
-    width: 200px;
+    width: 215px;
     border : solid 1px;
-    border-color:black;
+    border-color:grey;
     border-radius: 11px;
-    color: rgba(78, 78, 78, 0.834);
+    color: black;
 }
 
 .버튼{
@@ -41,8 +41,8 @@
     border : solid 1px rgb(14, 14, 224);
     background-color: rgb(15, 15, 235);
     color: white;
-    width: 85px; height: 30px;
-    padding-top: 5px;
+    width: 85px; height: 36px;
+    margin:5px;
     border-radius: 11px;
     font-size: 15px;
 }
@@ -53,4 +53,5 @@
 }
 .회원가입{
     color: blue;
+    padding-left: 7px;
 }

@@ -36,10 +36,10 @@
     color: black;
 }
 
-.버튼{
+button{
     display: inline-block;
-    border : solid 1px rgb(14, 14, 224);
-    background-color: rgb(15, 15, 235);
+    border : solid 1px rgb(0, 0, 0);
+    background-color: blue;
     color: white;
     width: 85px; height: 36px;
     margin:5px;

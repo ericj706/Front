@@ -1,5 +1,37 @@
 
-.전체창{
+/* *{border: 1px red solid;} */
+/* margin은 마지막에 */
+body > div{
+    margin: 0 auto;
+    width: 300px;
+    padding: 40px;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 2px 2px 5px grey;
+}
+
+div > input{
+    width: 150px;
+    padding: 5px;
+    border-radius: 7px;
+    border: solid 1px grey;
+    margin-bottom: 20px;
+}
+
+div > button{
+    background-color: blue;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 9px;
+    margin-bottom: 30px;
+}
+
+div > a{
+    color: blue;
+    padding-left: 7px;
+}
+
+/*.전체창{
     display: inline-block;
     border : solid 0px rgb(239, 192, 192);
     border-bottom: solid 1px rgb(239, 192, 192);
@@ -55,3 +87,4 @@ button{
     color: blue;
     padding-left: 7px;
 }
+*/

@@ -36,7 +36,7 @@ console.log(value)
 
 const user = { name: '김코딩','job-title': '개발자'}; 
 console.log(user['job-title'])
-
+*/
 /*예제 6: 중첩된 객체 다루기
 다음 student 객체에서 학생이 사는 도시(city)의 이름('Seoul')을 콘솔에 출력하시오.
 

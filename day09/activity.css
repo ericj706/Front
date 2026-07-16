@@ -1,0 +1,39 @@
+*{border: 1px solid red}
+.홈{
+    font-size: 25px;
+
+}
+.상단{
+    border : solid 1px rgb(54, 56, 190);
+    display: flex; width: 500px;
+    flex-direction: row;
+}
+
+span{
+    border-left: solid 1px black;
+}
+
+.메뉴명{
+    
+
+}
+.주문목록{
+
+}
+
+.취소{
+
+}
+.아아{
+    width: 130px;
+}
+.bu{
+    height: 30px;
+    width: 35px;
+}
+.수량{
+    display: inline-block;
+    text-align: center; 
+    height: 30px;
+    width: 35px;
+}

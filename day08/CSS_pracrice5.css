@@ -1,0 +1,13 @@
+*{border: 1px solid red}
+
+body{
+
+    display: flex; width: 300px;
+    flex-direction: column;
+}
+
+body > img{
+    border-radius: 1000px;
+    width: 150px;
+    box-shadow: 0px 0px 3px wheat;
+}

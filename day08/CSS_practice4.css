@@ -1,1 +1,23 @@
-*{border: 1px red}
+/* *{border: 1px solid red} */
+
+body > div{
+    display: flex; width: 300px;
+    flex-direction: column;
+    padding-right: 15px;
+    padding-left: 10px;
+    border: solid 1px black;
+}
+
+.상세설명{
+    width: 300px;
+    padding-bottom: 10px;
+}
+.본문{
+    font-size: 13px;
+    padding-bottom: 12px;
+}
+
+.평점{
+    padding: 12px;
+    color: orange;
+}

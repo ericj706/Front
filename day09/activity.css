@@ -1,16 +1,12 @@
-*{border: 1px solid red}
+/* *{border: 1px solid red} */
 .홈{
     font-size: 25px;
 
 }
 .상단{
     border : solid 1px rgb(54, 56, 190);
-    display: flex; width: 500px;
-    flex-direction: row;
-}
-
-span{
-    border-left: solid 1px black;
+    
+    
 }
 
 .메뉴명{
@@ -20,20 +16,51 @@ span{
 .주문목록{
 
 }
+.메뉴{
+    display: flex; 
+    justify-content: space-evenly; 
+    margin: 10px;
+}
 
 .취소{
-
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
-.아아{
-    width: 130px;
+.상품이미지{
+    margin-top: 13px;
+    width: 100px;
+    height: 100px;
+}
+.상품명{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+.옵션{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 12px;
+    width: 38px;
 }
 .bu{
-    height: 30px;
-    width: 35px;
+    font-size: 10px;
+    text-align: center;
+    height: 20px;
+    width: 27px;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .수량{
     display: inline-block;
     text-align: center; 
-    height: 30px;
-    width: 35px;
+    height: 27px;
+    width: 25px;
+
+    margin-top: 47px;
+    margin-bottom: 50px;
+}
+.가격{
+    margin-top: 50px;
+    margin-bottom: 50px;
 }

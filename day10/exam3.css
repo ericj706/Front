@@ -1,0 +1,41 @@
+*{border: 1px solid red;}
+
+
+/* #ID선택자 */
+#wrap{
+    width: 1280px;  /* 웹표준 가로 크기 */
+    margin: 0 auto; /* 구역 가로가운데 */
+}
+#header{
+    height: 100px;
+}
+#main{
+    /* 본문과 사이드바를 가로배치 */
+    display: flex;  /* 해당 하위요소들의 배치방법 */
+    flex-wrap: nowrap;  /* 만일 하위요소들이 부모요소보다 커지면 자동맞춤 */
+    justify-content: space-between
+}
+#main > #content{width: 840px; height: 500px;}
+#main > #sidebar{width: 420px; height: 500px;}
+
+#footer{height: 50px;}
+
+
+/* 1. px(픽셀): 화면 구성하는 가장 작은 점, 절대값 */
+.px{
+    width: 200px; /* 부모요소 500px 중 200px */
+}
+/* 2. %(백분): 자신이 속한 부모 요소의 크기를 기준으로 상대값 */
+/* width, height 속성들은 기본값이 100% */
+.per{
+    width: 50%;     /* 부모요소 500px 중 50% -> 250px */
+    font-size: 16px;
+    background-color: greenyellow;
+}
+/* 3. rem: 자신이 속한 부모 요소와 상관없이 HTML 뿌리 요소 비례하여 상대값 */
+.rem{
+    font-size: 1.5rem;  /* HTML 루트 폰트크기 16px -> 1.5(150%) -> 24px */
+}
+/* 4. vw,vh: 자신이 속한 부모요소와 상관없이 디바이스(브라우저 창)에 비례하여 상대값, 반응형웹 */
+.vw{width: 60vw; background-color: orange;}     /* 60% 차지하는 가로 사이즈 */
+.vh{width: 200px; height: 30vh; background-color: yellow;}  /* 30% 차지하는 세로 사이즈 */

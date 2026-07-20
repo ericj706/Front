@@ -1,13 +1,13 @@
-*{border: 1px solid red}
+/* *{border: 1px solid red} */
 
 body{
     display: flex; width: 300px;
     flex-direction: column;
-    margin: 0 aut0;
 }
 div{
     text-align: center;
     background-color: pink;
+    font-size: 15px;
 }
 
 .상단{
@@ -26,4 +26,36 @@ div{
     margin: 10px;
 }
 
-
+.찜{
+    width: 270px;
+    height: 40px;
+    background-color: skyblue;
+    border-color: skyblue;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    margin: 12px;
+    padding-top: 14px;
+}
+.인스타{
+    width: 270px;
+    height: 40px;
+    background-color: skyblue;
+    border-color: skyblue;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    margin: 12px;
+    padding-top: 14px;
+}
+.페북{
+    width: 270px;
+    height: 40px;
+    background-color: skyblue;
+    border-color: skyblue;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    margin: 12px;
+    padding-top: 14px;
+}

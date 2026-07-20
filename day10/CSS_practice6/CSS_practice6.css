@@ -1,0 +1,44 @@
+*{border: solid 1px red;}
+/* 기본 CSS세팅 */
+#header{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#main{
+    width: 1280px;
+    margin: 0 auto;
+}
+*{
+    box-sizing: border-box; /* content+padding 포함 사이즈 정의 */
+    padding: 0px; margin: 0px;  /* 기본여백 제거 */
+}
+a{
+    text-decoration: none;  /* a하이퍼링크 밑줄 제거 */
+    color: black;
+}
+li{list-style-type: none;}  /* li 항목 글머리 제거 */
+
+/*  [1] header */
+#header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;    /* 가운데 배치 */
+}
+
+.top_menu{
+    display: flex;
+    justify-content: end;   /* 오른쪽 정렬 */
+    margin: 17px 0px;
+    font-size: 12px;
+}
+.main_menu{
+    display: flex;
+    width: 480px;
+    display: flex; 
+    justify-content: space-between;  /* 하위 요소들 사이여백 균등정렬 */
+
+}
+
+.main_menu > li > a{font-size: 17px;}

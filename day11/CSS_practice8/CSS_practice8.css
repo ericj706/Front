@@ -1,4 +1,4 @@
-*{border: solid 1px red;}
+/* *{border: solid 1px red;} */
 /* 기본 CSS세팅 */
 #header{ 
     width: 1200px; /* 구역 가로 사이즈 */
@@ -36,7 +36,8 @@ li{ list-style-type: none; } /* li 항목 글머리 제거 */
 .right-head>li{padding: 0px 20px;}
 
 /*==============main=============*/
-.main_img{ width: 100%;}
+.main_img{ width: 1800px; margin: 0 auto;}
+.main_img>img{width: 1800px;}
 #main{display: flex;}
 .main1{
     display: flex;

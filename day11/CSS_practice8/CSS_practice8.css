@@ -50,3 +50,58 @@ li{ list-style-type: none; } /* li 항목 글머리 제거 */
 .title{
     font-weight: bold;
 }
+
+/*===============footer==============*/
+.전체{
+    background-color: #292d32;
+}
+
+.div03{
+    width: 1280px;
+    margin: 0 auto;
+    color: white;
+}
+
+.중앙상단{
+    color: white;
+    margin-right: 5px;
+    padding-right: 5px;
+    border-right: 1px solid white;
+}
+
+.중앙하단{
+    margin:0px 0px 50px 0px;
+}
+.div003{
+    display: flex;
+    justify-content: space-between;
+}
+
+.divbox01{
+    width: 400px;
+    margin-top: 50px;
+}
+
+.divbox02{
+    width: 400px;
+    margin-top: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+.aaaaa{
+    font-size: 15px;
+}
+
+.bbbbb{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.ccccc{
+    margin:0px 0px 15px 0px;
+}
+
+.ddddd{
+    margin: 0px 10px;
+}

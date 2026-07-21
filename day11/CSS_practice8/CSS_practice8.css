@@ -1,0 +1,52 @@
+*{border: solid 1px red;}
+/* 기본 CSS세팅 */
+#header{ 
+    width: 1200px; /* 구역 가로 사이즈 */
+    margin: 0 auto; /* 구역 가로 가운데 정렬 */
+}
+#main{ width: 1280px;margin: 0 auto; }
+/* 자주 사용되는 기본CSS */
+*{ 
+    box-sizing: border-box; /* content+padding 포함 사이즈 정의 */
+    padding: 0px; margin: 0px; /* 기본여백 제거 */
+}
+a{
+    text-decoration: none; /* a하이퍼링크 밑줄 제거 */
+    color: black; /* a하이퍼링크 색상 검정 */
+}
+li{ list-style-type: none; } /* li 항목 글머리 제거 */
+/*================header===================*/
+#header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+    font-size: 21px;
+}
+.head1{padding: 0px 5px; color: blue;}
+.head2{padding: 0px 5px;}
+.left-head{
+    display: flex;
+    margin: 10px;
+}
+.right-head{
+    display: flex;
+    font-size: 15px;
+}
+.right-head>li{padding: 0px 20px;}
+
+/*==============main=============*/
+.main_img{ width: 100%;}
+#main{display: flex;}
+.main1{
+    display: flex;
+}
+.main2{
+    display: flex;
+}
+.본문{
+    margin: 0px 12px;
+}
+.title{
+    font-weight: bold;
+}

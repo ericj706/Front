@@ -39,18 +39,45 @@ function 토글함수(){
 /*예제 5: 특정 HTML 요소 제거하기
 '박스 삭제' 버튼(id: 'removeBtn')을 클릭하면, id가 'targetBox'인 <div> 요소를 문서에서 제거하시오. */
 function 삭제(){
+    // 1. 특정한 마크업 가져오기
     let 마크업 = document.querySelector('#targetBox')
-    
+    // 2. 가져온 마크업 삭제하기 .remove()
+    마크업.remove( )
 }
-
 
 /*예제 6: 여러 요소에 동일한 작업 반복하기*
 클래스가 'item'인 모든 <p> 요소의 글자색을 'green'으로, 글자 두께를 'bold'로 변경하시오. */
-
+// 1. 특정 (여러개) 마크업DOM 가져오기
+let 마크업배열 = document.querySelectorAll('.item')
+// 2. 가져온 여러개 마크업들 반복
+for(let i=0;i<=마크업배열.length-1;i++){
+    let 아이템 = 마크업배열[i]
+    아이템.style.color = 'green'
+    아이템.style.fontWeight = 'bold'
+    // 카멜표기법 vs CSS표기법 
+    아이템.style = 'font-weight:bold;'
+}
 
 /*예제 7: 이미지 소스(src) 변경하기 , https://placehold.co/ 
 '이미지 변경' 버튼(id: 'changeImgBtn')을 클릭하면, id가 'mainImage'인 <img> 요소의 src 속성을 'https://placehold.co/600x400/red/white'로 변경하시오. */
+function 이미지변경함수(){
+    let 마크업 = document.querySelector('#mainImage')
+    // 2. 가져온 마크업에 src 속성 대입하기
+    마크업.src = 'https://placehold.co/600x400/orange/white'
+}
 
 /* 예제 8 : select 에서 선택한 option값 console 출력하기. */
+function 목록선택함수(){
+    let 마크업 = document.querySelector('select')
+    let 선택값 = 마크업.value
+    console.log(선택값)
+}
 
 /* 예제 9 : input 에서 입력받은 값을 전역 배열에 저장하고 배열 상태를 출력하기. */
+let list = []
+function 입력함수(){
+    let 마크업 = document.querySelector('#input')
+    let 입력값 = 마크업.value
+    list.push(입력값)
+    console.log(list)
+}

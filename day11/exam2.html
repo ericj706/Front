@@ -1,10 +1,38 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
+    <style>
+    .dark-mode{
+      background-color: black;
+      color: white;
+    }
+    </style>
     <link rel='stylesheet' href='main.css'>
 </head>
 <body>
+    <!-- 1. -->
+    <h1 id="title"> DOM </h1>
     
+    <!-- 2. -->
+    <input id="usernameInput"/>
+    <button onclick="작성함수()" id="submitBtn"> 예제2 </button>
+    <p id="greeting"></p>
+
+    <!-- 3. -->
+     <div id="colorBox"> 스타일 </div>
+    <button onclick="색상변경함수()" id="styleBtn"> 예제3 </button>
+    
+    <!-- 4. --> <br/>
+    <button onclick="토글함수()" id="themeBtn"> 테마변경 </button>    
+
+    <!-- 5. -->
+    <div id="targerBox">예제5</div>
+    <button onclick="삭제()" id="removeBtn">삭제</button>
+
+    <!-- 6. -->
+
+
+    <!-- 7. -->
 
     <script src="exam2.js"></script>
 </body>

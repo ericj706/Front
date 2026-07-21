@@ -72,6 +72,7 @@ const students = [
 
 
 
+
 /*실습 6: 상품 목록 페이지 만들기
 
 전역변수 products 배열 데이터를 이용하여, 각 상품을 소개하는 HTML 요소를 동적으로 만들어 페이지에 표시하는 renderProducts 함수를 만드세요.

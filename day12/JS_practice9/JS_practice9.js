@@ -10,3 +10,42 @@ let vacationList  = [ {'vcode': 101, 'pcode': 11, 'vsdate': '2025-08-04','vedate
     {'vcode': 102, 'pcode': 21, 'vsdate': '2025-07-21','vedate':'2025-07-25', 'vreason':'여름휴가'}]
 
 // [1] 사원조회함수
+personPrin()
+function personPrint(){
+    let tbody = document.querySelector('#main table tbody')
+    let html=''
+    for( let i=0; i<=personList-1;i++){
+        let person = personList[i]
+        let pname=''
+        for(let j=0; j<=personList-1;j++){
+            if(personList[j].pcode == person.pcode){
+                pname = personList[j].pname;
+                break;
+            }
+        }
+        html += `<tr class="list1">
+                        <td> <img src="${person.pimg}"/> </td>
+                        <td> ${pname} </td> <td> ${pteam} </td> <td> ${position} </td>
+                        <td>
+                                <button class="updateBtn">수정</button> 
+                                <button class="deleteBtn">삭제</button>
+                        </td>
+                </tr>
+                <tr class="list1">
+                        <td> <img src="${person.pimg}"/> </td>
+                        <td> ${pname} </td> <td> ${pteam} </td> <td> ${position} </td>
+                        <td>
+                                <button class="updateBtn">수정</button> 
+                                <button class="deleteBtn">삭제</button>
+                        </td>
+                </tr>
+                <tr class="list1">
+                        <td> <img src="${person.pimg}"/> </td>
+                        <td> ${pname} </td> <td> ${pteam} </td> <td> ${position} </td>
+                        <td>
+                                <button class="updateBtn">수정</button> 
+                                <button class="deleteBtn">삭제</button>
+                        </td>
+                 </tr>`
+    }
+}

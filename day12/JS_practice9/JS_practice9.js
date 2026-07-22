@@ -27,25 +27,47 @@ function personPrint(){
                         <td> <img src="${person.pimg}"/> </td>
                         <td> ${pname} </td> <td> ${pteam} </td> <td> ${position} </td>
                         <td>
-                                <button class="updateBtn">수정</button> 
-                                <button class="deleteBtn">삭제</button>
-                        </td>
-                </tr>
-                <tr class="list1">
-                        <td> <img src="${person.pimg}"/> </td>
-                        <td> ${pname} </td> <td> ${pteam} </td> <td> ${position} </td>
-                        <td>
-                                <button class="updateBtn">수정</button> 
-                                <button class="deleteBtn">삭제</button>
-                        </td>
-                </tr>
-                <tr class="list1">
-                        <td> <img src="${person.pimg}"/> </td>
-                        <td> ${pname} </td> <td> ${pteam} </td> <td> ${position} </td>
-                        <td>
-                                <button class="updateBtn">수정</button> 
-                                <button class="deleteBtn">삭제</button>
+                                <button class="updateBtn" onClick="personUpdate(${person.pcode})> 수정 </button> 
+                                <button class="deleteBtn" onClick="persondelete(${person.pcode}> 삭제 </button>
                         </td>
                  </tr>`
     }
+    // 출력
+    tbody.innerHTML = html
+}
+function personDelete(pcode){
+    for(let i=0; i<=personList-1;i++){
+        if(personList[i].pcode == pcode){
+            personList.splice(i,1);
+            alert('삭제 성공!')
+            personPrint();
+            return;
+        }
+    }
+}
+
+function personUpdate(pcode){
+    for(let i=0; i<=personList[i].length-1;i++){
+        if(personList[i].pcode ==pcode){
+            let newPname = prompt('')
+            let newPosition = prompt('')
+            personList[i].pname =newPname
+            personList[i].position = newPosition
+            personPrint(); return;
+        }
+    }
+}
+let finalPcode = 3
+function personAdd(){
+    let team = document.querySelector('.team').value;
+    let name = document.querySelector('.name').value;
+    let position = document.querySelector('.position').value;
+    let image = document.querySelector('.image').files[0];
+
+    if(team =='disabled'){alert('부서를 선택해주세요'); return;}
+
+    let object = {pname : name, position : position, pimg : image == undefined ? 'https://placehold.co/100x100' : URL.createObjectURL(image),
+        pcode : finalPcode+1 }
+    personList.push(object); finalPcode+1;
+    alert('등록완료'); productPrint();
 }

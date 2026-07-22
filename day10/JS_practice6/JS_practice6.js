@@ -61,14 +61,15 @@ console.log(total)
 전역변수 students 배열 데이터를 이용하여 , 가장 높은 점수(score)를 가진 학생의 이름을 찾아 반환하는 findTopStudent 함수를 만드세요.
 */
 const students = [
-
 { name: '김철수', score: 85 },
 
 { name: '이영희', score: 92 },
 
 { name: '박민준', score: 78 }
-
 ];
+function findTopStudent(){
+    
+}
 
 
 

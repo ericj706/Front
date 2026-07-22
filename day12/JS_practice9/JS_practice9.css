@@ -1,0 +1,76 @@
+*{border: solid 1px red;}
+
+#wrap2{
+    display: flex; 
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.307);
+}
+#person1{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.사원등록{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 20px 10px;
+    background-color: white;
+}
+.사원등록>h4{
+    font-size: 17px;
+    margin: 10px 15px;
+    margin-top: 25px;
+}
+.box1{
+    display: flex;
+}
+.person2{
+    display: flex;
+    flex-direction: column;
+}
+.box2{
+    width: 250px;
+    padding: 10px;
+    margin: 0px 30px;
+}
+.등록{
+    width: 60px;
+    padding: 10px 0px;
+    border-radius: 8px;
+    margin: 15px 0px;
+    margin-left: 590px;
+    background-color: #7c3aed;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+}
+
+.사원목록{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 20px 10px;
+    background-color: white;
+}
+.사원목록>h4{
+    font-size: 17px;
+    margin: 10px 15px;
+    margin-top: 25px;
+}
+.list{
+    margin: 20px;
+    
+}
+.head{
+    
+}
+.updateBtn{
+    color: blue;
+    background-color: white;
+}
+.deleteBtn{
+    color: red;
+    background-color: white;
+}

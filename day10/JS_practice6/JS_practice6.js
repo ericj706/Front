@@ -67,8 +67,12 @@ const students = [
 
 { name: '박민준', score: 78 }
 ];
+let best = 0;
 function findTopStudent(){
-    
+    for(let i=0; i<=students.length-1;i++){
+        if(students[i].score < students[i+1].score){best=students[i+1].score; return;}
+        else{best=students[i].score}
+    }
 }
 
 
@@ -79,16 +83,14 @@ function findTopStudent(){
 전역변수 products 배열 데이터를 이용하여, 각 상품을 소개하는 HTML 요소를 동적으로 만들어 페이지에 표시하는 renderProducts 함수를 만드세요.
 
 각 상품은 이름(<h4>), 가격(<p>), 재고(<p>)를 포함한 div로 묶여야 합니다.
-
+*/
 const products = [
-
 { name: '노트북', price: 1200000, stock: 5 },
 
 { name: '모니터', price: 350000, stock: 12 },
 
 { name: '키보드', price: 80000, stock: 25 }
-
-];*/
+];
 
 
 

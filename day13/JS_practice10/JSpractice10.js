@@ -24,8 +24,8 @@ function signup(){
 
     // *localStorage에 memberList 배열 저장하기
     localStorage.setItem('memberList' , JSON.stringify(memberList))
-
 }
+
 
 // [2] login 함수, 자료 단순 비교
 function login(){

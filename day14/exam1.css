@@ -1,0 +1,35 @@
+.box{
+    width: 100px; height: 100px;
+    background-color: yellow;
+    border: 1px solid red;
+}
+
+.box2{
+    /* 요소 배치 순서 : static(기본값) 정적, 위치 변경 불가능 */
+    position: static;
+    left: 50px;
+}
+
+.box3{
+    /* relative: 상대 위치 */
+    position: relative;
+    top: 50px;  /* top: 위에서부터 50px 아래로 이동 */
+    left: 50px; /* left: 왼쪽에서부터 50ox 오른쪽으로 이동 */
+}
+.box4{
+    /* absolute: 절대 위치 (가장 가까운 position 상위요소) */
+    position: absolute; /* <body>를 따라감 */
+    top: 50px; left: 50px;
+}
+.box5{
+    /* fixed: 드바이스(화면) 위치 고정*/
+    position: fixed;
+    bottom: 50px; /* bottom 아래에서부터 50px 위로 이동, 음수면 아래 */
+    right: 50px;  /* right 오른쪽에서부터 50px 오른쪽으로 이동, 음수이면 왼쪽 */
+}
+
+.parent{ position: relative; } /* 부모의 위치를 따라가게됨 */
+.box6{
+    position: absolute;
+    top: 30px; left: 30px;
+}
